@@ -5,6 +5,7 @@
  */
 package assignment1;
 
+import assignmentdb.DBManager;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;

@@ -5,10 +5,9 @@
  */
 package assignment1;
 
-import assignment.db.UserDao;
+import assignmentdb.DBManager;
+import assignmentdb.User;
 import model.RegularUser;
-import assignment.db.DBManager;
-import assignment.db.User;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -34,7 +33,7 @@ public class Assignment1{
         
          System.out.println("Welcome to the Tax Calculator App!");
 
-         Assignment.menu();
+         Assignment1.menu();
          
          
     }
@@ -139,7 +138,7 @@ public class Assignment1{
                        
                        System.out.println("User Registered Successfully ");
                        
-                        Assignment.menu();
+                        Assignment1.menu();
                        
                        
                  }
@@ -216,7 +215,7 @@ public class Assignment1{
             case 0:
                 // Logout
                 System.out.println("Logged out as Admin.");
-                Assignment.menu();
+                Assignment1.menu();
                 return;
 
             default:
